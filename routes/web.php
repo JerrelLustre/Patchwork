@@ -29,7 +29,8 @@ Route::get('/signup', function () {
 });
 
 // Homepage, show all todos
-Route::get('/', [todoController::class, 'index']);
+Route::get('/', [todoController::class, 'index']
+);
 
 // Create
 Route::get('/todos/create', [todoController::class,'create']);

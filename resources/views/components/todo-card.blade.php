@@ -1,12 +1,12 @@
 @props(['todo'])
 
 <div class="col-span-1 ">
-                <div class="rounded-3xl p-2.5  m-1 border bg-enterpriseBgColor">
+                <div class="rounded-3xl p-2.5  m-1 border {{ $todo->course }}BgColor">
                     <!-- Top Part (Tag & Edit Buttion) -->
                     <div class="flex justify-between items-center mb-5 ">
                         <!-- Label -->
                         <div class="text-xs text-white font-normal">
-                            <p class="rounded-4xl px-4 bg-enterpriseTagColor font-pop">{{ $todo->course }}</p>
+                            <p class="rounded-4xl px-4 {{ $todo->course }}TagColor font-pop">{{ $todo->course }}</p>
                         </div>
                         <!-- End: Label -->
                         <!-- Edit -->
@@ -25,10 +25,10 @@
                     <!-- End: Title & Date -->
 
                     <!-- CheckBox -->
-                    <div class="flex hover:cursor-pointer items-center mb-5">
+                    <!-- <div class="flex hover:cursor-pointer items-center mb-5">
                         <img class="hover:cursor-pointer" src="{{asset('images/checkbox.svg')}}" alt="">
                         <p class="underline text-white font-normal text-xs font-pop ml-auto"> Mark as completed</p>
-                    </div>
+                    </div> -->
                     <!-- End:checkbox -->
 
                     <!-- Delete -->

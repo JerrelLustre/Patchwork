@@ -4,7 +4,7 @@
         </h1>
         <div class="flex gap-5 items-center">
             <!-- Light & Dark mode toggle -->
-            <label class="relative inline-flex items-center cursor-pointer">
+            <!-- <label class="relative inline-flex items-center cursor-pointer">
                 <input type="checkbox" value="" class="sr-only peer">
                 <div
                     class="w-[56px] h-[25px] bg-white peer
@@ -46,9 +46,9 @@
                         </svg>
                     </div>
                 </div>
-            </label>
+            </label> -->
             <!-- Menu -->
-            <div>
+            <div @click="fullscreenModal=true" class="cursor-pointer">
                 <svg xmlns="http://www.w3.org/2000/svg" width="33" height="19" fill="none"><path fill="#7C95AA" fill-rule="evenodd" d="m0 1 1-1h31l1 1-1 2H1L0 1Zm0 9 1-2h31l1 2-1 1H1l-1-1Zm0 8 1-2h31l1 2-1 1H1l-1-1Z" clip-rule="evenodd"/></svg>
             </div>
         </div>

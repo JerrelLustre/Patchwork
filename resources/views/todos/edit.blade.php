@@ -11,7 +11,7 @@
 <div class=" w-[276px] flex flex-col justify-center items-center mx-auto ">
     <!-- Create Form -->
 
-        <form method="POST" action="/todos/edit/{{$todo->id}}" class="flex-col flex items-center flex-grow">
+        <form method="POST" action="/patchworkv101/public/todos/edit/{{$todo->id}}" class="flex-col flex items-center flex-grow">
             @csrf
             @method('PUT')
             <div>
