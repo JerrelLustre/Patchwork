@@ -43,11 +43,11 @@ Route::get('/todos/edit/{todo}', [todoController::class,'edit']);
 // Update
 Route::put('/todos/edit/{todo}', [todoController::class,'update']);
 
-Route::get('/todos/delete/{id}', [todoController::class,'deleteConfirm']);
+// Show delete form
+Route::get('/todos/delete/{todo}', [todoController::class,'deleteConfirm']);
 
 // Delete Todo
-Route::delete('/delete/{id}', [todoController::class, 'delete']);
-
+Route::delete('/todos/delete/{todo}', [todoController::class, 'delete']);
 
 // Show all courses
 Route::get('/courses', function () {

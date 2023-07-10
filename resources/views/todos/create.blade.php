@@ -11,7 +11,7 @@
 <div class=" w-[276px] flex flex-col justify-center items-center mx-auto ">
     <!-- Create Form -->
 
-        <form method="Post" action="/todos" class="flex-col flex items-center flex-grow">
+        <form method="POST" action="/todos" class="flex-col flex items-center flex-grow">
             @csrf
             <div>
                 <!-- "Is an assignment or exam?" input -->

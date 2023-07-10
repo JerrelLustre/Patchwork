@@ -57,7 +57,7 @@ class todoController extends Controller
     }
 
     // Delete todo
-    public function delete(todo $todo){
+    public function delete(Request $request, Todo $todo){
         $todo->delete();
         return redirect('/');
     }
