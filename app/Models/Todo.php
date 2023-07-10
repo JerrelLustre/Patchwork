@@ -16,4 +16,6 @@ class Todo extends Model
             $query->where('type', 'like' , '%' . request('type' ) . '%'  );
         };
     }
+
+    protected $fillable =['title' , 'course', 'type', 'date', 'time'];
 }

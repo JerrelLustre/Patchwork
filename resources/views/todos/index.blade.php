@@ -9,7 +9,7 @@
         <!-- Sub-heading -->
         <div class="flex justify-between max-w-[20.9375rem] mx-auto mb-1">
             <h2 class="text-2xl font-base font-normal font-pop text-black dark:text-white">Upcoming</h2>
-            <a href="#"><img src="{{asset('images/add-todo.svg')}}" alt=""></a>
+            <a href="./todos/create"><img src="{{asset('images/add-todo.svg')}}" alt=""></a>
         </div>
         <!-- End:Sub-heading -->
                 <!-- Filter -->
@@ -40,4 +40,4 @@
         </div>
         <!-- End: To-Do List -->
     </section>
-@endsection
+    @endsection

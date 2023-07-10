@@ -6,7 +6,7 @@
                     <div class="flex justify-between items-center mb-5 ">
                         <!-- Label -->
                         <div class="text-xs text-white font-normal">
-                            <p class="rounded-4xl px-4 bg-enterpriseTagColor font-pop">{{ $todo->title }}</p>
+                            <p class="rounded-4xl px-4 bg-enterpriseTagColor font-pop">{{ $todo->course }}</p>
                         </div>
                         <!-- End: Label -->
                         <!-- Edit -->
@@ -19,8 +19,8 @@
                     
                     <!-- Title & Date -->
                     <div class=" mb-3">
-                        <h3 class="text-base font-deca font-semibold mb-3 text-black">{{ $todo->course }}</h3>
-                        <p class=" text-sm font-pop ">{{ $todo->due}} </p>
+                        <h3 class="text-base font-deca font-semibold mb-3 text-black">{{ $todo->title }}</h3>
+                        <p class=" text-sm font-pop ">{{ $todo->date}}  {{ $todo->time}}  </p>
                     </div>
                     <!-- End: Title & Date -->
 

@@ -19,7 +19,8 @@ class todoFactory extends Factory
         return [
             'title' => 'Assignment 1',
             'type' => 'Exam',
-            'due' => $this->faker->dateTime(),
+            'date' => $this->faker->date(),
+            'time' => $this->faker->time(),
             'course' => 'Enterprise',
             'isComplete' => false,
         ];

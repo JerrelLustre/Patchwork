@@ -1,4 +1,4 @@
-@extends('layout')
+<x-layout>
 
 @section('content')
 <section>

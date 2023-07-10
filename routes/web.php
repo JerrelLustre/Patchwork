@@ -15,13 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// dashboard
-Route::get('/', [todoController::class, 'index']);
 
-// Show all courses
-Route::get('/courses', function () {
-    return view('courses');
-});
+
 
 // Login Form
 Route::get('/login', function () {
@@ -33,16 +28,17 @@ Route::get('/signup', function () {
     return view('user.signup');
 });
 
+// Homepage, show all todos
+Route::get('/', [todoController::class, 'index']);
 
-// Edit Answer
-Route::get('/todos/edit/{todo}', function (Todo $todo) {
+// Create
+Route::get('/todos/create', [todoController::class,'create']);
 
-        return view('edit', [
-            'todo' => $todo
-        ]);
+// Store todo
+Route::post('/todos', [todoController::class, 'store']);
 
-    
-});
+// Edit Todo
+
 
 // Delete Todo
 Route::get('todos/delete/{id}', function () {
@@ -50,3 +46,7 @@ Route::get('todos/delete/{id}', function () {
 });
 
 
+// Show all courses
+Route::get('/courses', function () {
+    return view('courses');
+});

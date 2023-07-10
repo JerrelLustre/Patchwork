@@ -14,13 +14,24 @@ class todoController extends Controller
         ]);
     }
 
-    // Create Todo
+    // Show Create form
     public function create(){
-
+        return view('todos.create', []);
     }
-    // store Todo
-    public function store(){
 
+    // store Todo from create form
+    public function store(Request $request){
+        $formFields = $request->validate([
+            "type" => "required",
+            "course" => "required",
+            "title" => "required",
+            "date" => "required",
+            "time" => "required",
+        ]);
+
+        Todo::create($formFields);
+        // elstu
+        return redirect('/');
     }
     // show form to edit todo
     public function edit(){

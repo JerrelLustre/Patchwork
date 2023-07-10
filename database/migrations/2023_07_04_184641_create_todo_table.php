@@ -14,11 +14,13 @@ return new class extends Migration {
             $table->id();
             $table->timestamps();
             // assignment name
-            $table->string('title', 20)->nullable();
+            $table->string('title', 100)->nullable();
             // is it an Exam or Assignment?
             $table->string('type')->nullable();
             // due Date
-            $table->dateTime('due')->nullable();
+            $table->date('date')->nullable();
+            // Due time
+            $table->time('time')->nullable();
             // course
             $table->string('course')->nullable();
             // Marked as complete
