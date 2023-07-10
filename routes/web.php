@@ -38,12 +38,15 @@ Route::get('/todos/create', [todoController::class,'create']);
 Route::post('/todos', [todoController::class, 'store']);
 
 // Edit Todo
+Route::get('/todos/edit/{todo}', [todoController::class,'edit']);
 
+// Update
+Route::put('/todos/edit/{todo}', [todoController::class,'update']);
+
+Route::get('/todos/delete/{id}', [todoController::class,'deleteConfirm']);
 
 // Delete Todo
-Route::get('todos/delete/{id}', function () {
-    return view('delete');
-});
+Route::delete('/delete/{id}', [todoController::class, 'delete']);
 
 
 // Show all courses

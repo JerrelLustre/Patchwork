@@ -30,21 +30,35 @@ class todoController extends Controller
         ]);
 
         Todo::create($formFields);
-        // elstu
         return redirect('/');
     }
     // show form to edit todo
-    public function edit(){
-
+    public function edit(Todo $todo){
+        return view('todos.edit', ['todo' => $todo]);
     }
     // Update todo with "edit" info
-    public function update(){
+    public function update(Request $request, Todo $todo){
+        $formFields = $request->validate([
+            "type" => "required",
+            "course" => "required",
+            "title" => "required",
+            "date" => "required",
+            "time" => "required",
+        ]);
 
+        $todo->update($formFields);
+
+        return redirect('/');
+    }
+
+    // Show delete form
+    public function deleteConfirm(Todo $todo){
+        return view('todos.delete', ['todo' => $todo]);
     }
 
     // Delete todo
-
-    public function delete(){
-
+    public function delete(todo $todo){
+        $todo->delete();
+        return redirect('/');
     }
 }
