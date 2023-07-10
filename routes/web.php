@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Todo;
+use App\Http\Controllers\todoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +16,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 // dashboard
-Route::get('/', function () {
-    return view('home', [
-        'todos' => Todo::all()
-    ]);
-});
+Route::get('/', [todoController::class, 'index']);
 
 // Show all courses
 Route::get('/courses', function () {
@@ -28,17 +25,28 @@ Route::get('/courses', function () {
 
 // Login Form
 Route::get('/login', function () {
-    return view('login');
+    return view('user.login');
 });
 
 // Signup
 Route::get('/signup', function () {
-    return view('signup');
+    return view('user.signup');
 });
 
-// Show upcoming exams and assignments
-Route::get('/todos', function () {
-    return view('todos');
+
+// Edit Answer
+Route::get('/todos/edit/{todo}', function (Todo $todo) {
+
+        return view('edit', [
+            'todo' => $todo
+        ]);
+
+    
+});
+
+// Delete Todo
+Route::get('todos/delete/{id}', function () {
+    return view('delete');
 });
 
 

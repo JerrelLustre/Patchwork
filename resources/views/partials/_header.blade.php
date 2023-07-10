@@ -1,7 +1,7 @@
 <header class="flex justify-between items-center mb-[3.625rem] mt-[2.25rem] w-[90%] mx-auto">
-        <div>
-            <img src="{{asset('images/logo.svg')}}" alt="logo">
-        </div>
+        <h1>
+            <a href="/" title="Go to Patchwork homepage"><img src="{{asset('images/logo.svg')}}" alt="Patchwork"></a>
+        </h1>
         <div class="flex gap-5 items-center">
             <!-- Light & Dark mode toggle -->
             <label class="relative inline-flex items-center cursor-pointer">

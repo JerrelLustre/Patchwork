@@ -35,11 +35,11 @@ lg:grid-cols-[repeat(3,20.9375rem)]
         <!-- End: Image background -->
         <!-- Buttons -->
         <div class="absolute -bottom-4 right-0 flex gap-4">
-            <a href="#" title=""
+            <a href="#" title="Open up D2L to see Course assignments"
             class="shadow-btn text-base font-semibold text-white font-deca px-4 py-2 rounded-3xl bg-menuButtonColor2 hover:cursor-pointer">
             Assignments
             </a>
-            <a href="#" title=""
+            <a href="#" title="Open up D2L to see Content"
             class="shadow-btn text-base font-semibold text-white font-deca px-4 py-2 rounded-3xl bg-menuButtonColorButton hover:cursor-pointer">
             Content
             </a>
