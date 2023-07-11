@@ -1,7 +1,8 @@
 <?php
 
-use App\Models\Todo;
+// use App\Models\Todo;
 use App\Http\Controllers\todoController;
+use App\Http\Controllers\userController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,3 +55,7 @@ Route::delete('/todos/delete/{todo}', [todoController::class, 'delete']);
 Route::get('/courses', function () {
     return view('courses');
 });
+
+// Show Register/create form
+
+Route::get('/register', [UserController::class, 'create']);
