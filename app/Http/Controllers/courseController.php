@@ -48,9 +48,6 @@ class courseController extends Controller
             ],
            
         ];
-        
-        return view('courses', [
-            'courses' => $courses
-        ]);
+        return view('courses', ['courses' => $courses]);
     }
 }

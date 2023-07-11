@@ -53,10 +53,4 @@ Route::get('/todos/delete/{todo}', [todoController::class,'deleteConfirm']);
 Route::delete('/todos/delete/{todo}', [todoController::class, 'delete']);
 
 // Show all courses
-Route::get('/courses', function () {
-    return view('courses');
-});
-
-// Show Register/create form
-
-Route::get('/register', [UserController::class, 'create']);
+Route::get('/courses', [courseController::class, 'showCourses']);
