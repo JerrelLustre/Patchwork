@@ -121,7 +121,7 @@
                     </div>
                     <ul class="w-full grid grid-rows-[repeat(3,9.25rem)] overflow-auto list-none">
                         <li class="bg-menuButtonColor1 row-span-1">
-                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="">
+                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/patchworkv101/public/">
                                 <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Dash
                                     Board</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">See your
@@ -129,14 +129,14 @@
                             </a>
                         </li>
                         <li class="bg-menuButtonColor2 row-span-1 flex items-center justify-center">
-                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="">
+                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/patchworkv101/public/courses">
                                 <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Courses</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">See all your
                                     courses</span>
                             </a>
                         </li>
                         <li class="bg-menuButtonColor3 row-span-1 flex items-center justify-center">
-                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="">
+                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="https://learn.bcit.ca/d2l/home">
                                 <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Learning
                                     Hub</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">Open a new
