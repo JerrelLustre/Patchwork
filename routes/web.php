@@ -19,16 +19,29 @@ use App\Http\Controllers\courseController;
 
 
 
+/* ---------------------------------- Users ---------------------------------- */
 
 // Login Form
-Route::get('/login', function () {
-    return view('user.login');
-});
+Route::get('/login', [userController::class,'login'] )->name('login');
+
+// Login User
+
+Route::post('/user/authenticate', [userController::class,'authenticate'] );
+
 
 // Signup
-Route::get('/signup', function () {
-    return view('user.signup');
-});
+Route::get('/signup', [userController::class,'create'] );
+
+// Create new user
+Route::post('/user', [userController::class,'store']);
+
+// Logout
+Route::post('/logout', [userController::class,'logout']);
+
+// Only show site if logged in
+Route::group(['middleware' => 'auth'], function(){
+
+/* ---------------------------------- Todos --------------------------------- */
 
 // Homepage, show all todos
 Route::get('/', [todoController::class, 'index']
@@ -52,5 +65,11 @@ Route::get('/todos/delete/{todo}', [todoController::class,'deleteConfirm']);
 // Delete Todo
 Route::delete('/todos/delete/{todo}', [todoController::class, 'delete']);
 
+/* --------------------------------- Course --------------------------------- */
+
 // Show all courses
 Route::get('/courses', [courseController::class, 'showCourses']);
+
+
+});
+// Close authentication route group

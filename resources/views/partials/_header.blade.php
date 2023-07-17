@@ -1,3 +1,4 @@
+@auth
 <header class="flex justify-between items-center mb-[3.625rem] mt-[2.25rem] w-[90%] mx-auto">
         <h1>
             <a href="/" title="Go to Patchwork homepage"><img src="{{asset('images/logo.svg')}}" alt="Patchwork"></a>
@@ -53,3 +54,4 @@
             </div>
         </div>
     </header>
+    @endauth

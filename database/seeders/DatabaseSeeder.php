@@ -15,12 +15,14 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(10)->create();
 
-        \App\Models\User::factory()->create([
+        $user = \App\Models\User::factory()->create([
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
 
-        Todo::factory(6)->create();
+        Todo::factory(6)->create([
+            'user_id' => $user->id
+        ]);
         
 
     }

@@ -1,6 +1,6 @@
 @props(['todo'])
 
-<div class="col-span-1 ">
+<div class="col-span-1 w-full">
                 <div class="rounded-3xl p-2.5  m-1 border {{ $todo->course }}BgColor">
                     <!-- Top Part (Tag & Edit Buttion) -->
                     <div class="flex justify-between items-center mb-5 ">

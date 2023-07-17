@@ -1,9 +1,9 @@
         <!-- Greeting -->
         <div class="max-w-[20.9375rem] mx-auto">
-            <div>
+            <div class="mb-5">
                 <h1 class="text-2xl font-deca font-semibold mt-10 text-[#000] dark:text-white">Welcome Back,
                     People!</h1>
-                <p class="text-base font-normal font-pop text-black dark:text-noticeColorlight mt-2">April 23, 2023 Wednesday</p>
+                <p class="text-base font-normal font-pop text-black dark:text-noticeColorlight mt-2">{{date('l jS \of F Y h:i:s A')}}</p>
             </div>
             @if($count > 0)
             <!-- Notice list -->

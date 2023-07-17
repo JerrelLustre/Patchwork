@@ -31,7 +31,7 @@ lg:grid-cols-[repeat(3,20.9375rem)]
         <!-- Image background -->
         <div class="absolute  inset-0  p-[inherit]">
             <img class="w-full h-full object-cover rounded-3xl" src="https://source.unsplash.com/random" alt="">
-            <a class="absolute top-3 right-3 cursor-pointer "><img class="drop-shadow-card" src="../img/edit-image.svg" alt=""></a>
+            <!-- <a class="absolute top-3 right-3 cursor-pointer "><img class="drop-shadow-card" src="{{asset('images/edit-image.svg')}}" alt=""></a> -->
         </div>
         <!-- End: Image background -->
         <!-- Buttons -->
