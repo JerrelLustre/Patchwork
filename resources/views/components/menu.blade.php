@@ -28,14 +28,14 @@
                     </div>
                     <ul class="w-full grid grid-rows-[repeat(3,9.25rem)] overflow-auto list-none">
                         <li class="bg-menuButtonColor1 row-span-1">
-                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/patchworkv101/public/">
+                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/public/">
                                 <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Dashboard</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">See your
                                     dashboard</span>
                             </a>
                         </li>
                         <li class="bg-menuButtonColor2 row-span-1 flex items-center justify-center">
-                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/patchworkv101/public/courses">
+                            <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/public/courses">
                                 <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Courses</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">See all your
                                     courses</span>
@@ -51,7 +51,7 @@
                         </li>
                     </ul>
                     <!-- Logout -->
-                    <form method="POST" action="/patchworkv101/public/logout">
+                    <form method="POST" action="/public/logout">
                         @csrf
                         <div class="h-[9.25rem] flex justify-center items-center">
                             <button type="submit"

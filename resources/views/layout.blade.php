@@ -100,9 +100,11 @@
 
 <body class="bg-offWhite dark:bg-black ">
   
+@auth
 <x-menu>
 @include('partials._header')
 </x-menu>  
+@endauth
 
     @yield('content')
 

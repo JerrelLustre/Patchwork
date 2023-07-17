@@ -5,13 +5,13 @@
 <!-- Sub-heading -->
 <div class="flex justify-between max-w-[20.9375rem] mx-auto mb-12 items">
     <h2 class="text-2xl font-base font-normal font-pop text-black dark:text-white">Delete</h2>
-    <a href="/" title="Return to homepage"
+    <a href="/public" title="Return to homepage"
     class="underline font-base font-normal font-pop text-black dark:text-white">Go Back</a>
 </div>
 <div class=" w-[276px] flex flex-col justify-center items-center mx-auto ">
     <!-- Create Form -->
 
-        <form method="POST" action="/patchworkv101/public/todos/delete/{{$todo->id}}" class="flex-col flex items-center flex-grow">
+        <form method="POST" action="/public/todos/delete/{{$todo->id}}" class="flex-col flex items-center flex-grow">
             @csrf
             @method('DELETE')    
             <div>
