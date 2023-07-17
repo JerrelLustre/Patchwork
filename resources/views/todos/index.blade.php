@@ -31,8 +31,8 @@
         <!-- To-do list -->
         <div class=" 
         grid-cols-[repeat(2,11.625rem)] 
-        md:grid-cols-[repeat(3,11.625rem)] 
-        lg:grid-cols-[repeat(4,11.625rem)] 
+        md:grid-cols-[repeat(3,14rem)] 
+        lg:grid-cols-[repeat(4,14rem)] 
         grid gap-x-1.5 gap-y-3 w-fit mx-auto">
         @foreach ($todos as $todo)
             <x-todo-card :todo="$todo" />

@@ -50,8 +50,8 @@ class todoController extends Controller
         $formFields = $request->validate([
             "type" => "required",
             "course" => "required",
-            "title" => "required",
-            "date" => "required",
+            "title" => ["required", "max:100"],
+            "date" => ["required", "date"],
             "time" => "required",
         ]);
 
@@ -78,7 +78,7 @@ class todoController extends Controller
         $formFields = $request->validate([
             "type" => "required",
             "course" => "required",
-            "title" => "required",
+            "title" => ["required", "max:100"],
             "date" => "required",
             "time" => "required",
         ]);

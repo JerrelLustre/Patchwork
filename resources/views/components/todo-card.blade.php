@@ -1,7 +1,12 @@
 @props(['todo'])
 
+
 <div class="col-span-1 w-full">
-                <div class="rounded-3xl p-2.5  m-1 border {{ $todo->course }}BgColor">
+                <div class="rounded-3xl p-2.5  m-1 {{ $todo->course }}BgColor 
+                @if ($todo->date >= date('Y-m-d') && $todo->date <= date('Y-m-d', strtotime('+5 days')))
+                {{'upcomingBorder'}}
+                @endif
+                ">
                     <!-- Top Part (Tag & Edit Buttion) -->
                     <div class="flex justify-between items-center mb-5 ">
                         <!-- Label -->
@@ -18,8 +23,8 @@
                     <!-- End:Top Part (Tag & Edit Buttion) -->
                     
                     <!-- Title & Date -->
-                    <div class=" mb-3">
-                        <h3 class="text-base font-deca font-semibold mb-3 text-black">{{ $todo->title }}</h3>
+                    <div class=" mb-3 w-full">
+                        <h3 class="text-base font-deca font-semibold mb-3 text-black hyphens-auto  break-words">{{ $todo->title }}</h3>
                         <p class=" text-sm font-pop ">{{ $todo->date}}  {{ $todo->time}}  </p>
                     </div>
                     <!-- End: Title & Date -->

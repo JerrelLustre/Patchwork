@@ -18,7 +18,8 @@ mx-auto
 grid
 grid-cols-[repeat(1,20.9375rem)] 
 md:grid-cols-[repeat(2,20.9375rem)] 
-lg:grid-cols-[repeat(3,20.9375rem)] 
+lg:grid-cols-[repeat(3,20.9375rem)]
+gap-4 
 ">
     @foreach ($courses as $course)
     <!-- Course Item -->
@@ -30,7 +31,7 @@ lg:grid-cols-[repeat(3,20.9375rem)]
         <!-- End: label -->
         <!-- Image background -->
         <div class="absolute  inset-0  p-[inherit]">
-            <img class="w-full h-full object-cover rounded-3xl" src="https://source.unsplash.com/random" alt="">
+            <img class="w-full h-full object-cover rounded-3xl" src="{{ asset('images/courses/' . $course['image']) }}"alt="">
             <!-- <a class="absolute top-3 right-3 cursor-pointer "><img class="drop-shadow-card" src="{{asset('images/edit-image.svg')}}" alt=""></a> -->
         </div>
         <!-- End: Image background -->

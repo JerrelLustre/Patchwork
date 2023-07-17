@@ -20,7 +20,7 @@
                     <div class="w-full h-[9.25rem] bg-menuButtonColorTop flex ">
                         <div class="w-[90%] mx-auto flex justify-between items-center">
                             <div>
-                                <p class="text-white font-normal font-deca text-3xl">Bob Johns</p>
+                                <p class="text-white font-normal font-deca text-3xl">{{Auth::user()->name}}</p>
                             </div>
                             <img @click="fullscreenModal=false" class="flex-grow-0 w-8 h-8 cursor-pointer"
                                 src="{{asset('images/close-menu.svg')}}" alt="Click to close menu">
@@ -29,8 +29,7 @@
                     <ul class="w-full grid grid-rows-[repeat(3,9.25rem)] overflow-auto list-none">
                         <li class="bg-menuButtonColor1 row-span-1">
                             <a class=" flex flex-col items-center justify-center gap-5 w-full h-full" href="/patchworkv101/public/">
-                                <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Dash
-                                    Board</span>
+                                <span class="font-deca text-3xl font-normal tracking-[1.12px] text-black">Dashboard</span>
                                 <span class="font-deca text-base font-normal tracking-[1.12px] text-black">See your
                                     dashboard</span>
                             </a>

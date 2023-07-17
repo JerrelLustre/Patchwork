@@ -13,78 +13,85 @@
         href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;600&family=Poppins:wght@400;600&display=swap"
         rel="stylesheet">
         <style>
-.internshipTagColor {
+.InternshipTagColor {
   background-color: #2b9985;
 }
 
-.internshipBgColor {
+.InternshipBgColor {
   background-color: #31c9ad;
 }
 
-.qualityAssuranceTagColor {
+.QualityAssuranceTagColor {
   background-color: #e76c6c;
 }
 
-.qualityAssuranceBgColor {
+.QualityAssuranceBgColor {
   background-color: #eda0a0;
 }
 
-.webScripting3TagColor {
+.WebScripting3TagColor {
   background-color: #b9a91a;
 }
 
-.webScripting3BgColor {
+.WebScripting3BgColor {
   background-color: #dccb35;
 }
 
-.appDev2TagColor {
+.AppDev2TagColor {
   background-color: #AD8CE5;
 }
 
-.appDev2BgColor {
+.AppDev2BgColor {
   background-color: #CEB1FE;
 }
 
-.portfolio2TagColor {
+.Portfolio2TagColor {
   background-color: #b99822;
 }
 
-.portfolio2BgColor {
+.Portfolio2BgColor {
   background-color: #EAB631;
 }
 
-.enterpriseTagColor {
+.EnterpriseTagColor {
   background-color: #528aba;
 }
 
-.enterpriseBgColor {
+.EnterpriseBgColor {
   background-color: #7aadda;
 }
 
-.nmOperationTagColor {
+.NMOperationTagColor {
   background-color: #DF6643;
 }
 
-.nmOperationBgColor {
+.NMOperationBgColor {
   background-color: #db8b74;
 }
 
-.onlineStoreTagColor{
+.OnlineStoreTagColor{
   background-color: #4F9362;
 }
 
-.onlineStoreBgColor {
+.OnlineStoreBgColor {
   background-color: #72CA8A;
 }
 
-.careerPrepTagColor {
+.CareerPrepTagColor {
   background-color: #DE6DC5;
 }
 
-.careerPrepBgColor {
+.CareerPrepBgColor {
   background-color: #F59AE1;
 }
 
+/* Upcoming items have this border */
+
+.upcomingBorder{
+  border-color:rgb(236 107 107 / var(--tw-bg-opacity));
+  border-width:0.2rem;
+  box-sizing: border-box;
+}
         </style>
         @vite('resources/css/app.css')
     
